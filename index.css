@@ -1,7 +1,15 @@
-.header{
+.header {
     color: red;
     text-align: center;
+    font-size: 32px; 
+    margin-top: 50px; 
 }
-.content{
-    color: rgb(1, 16, 1)
+
+/* Styling for the body content */
+.content {
+    color: rgb(1, 16, 1);
+    text-align: center;
+    font-size: 18px; 
+    line-height: 1.5; 
+    margin: 20px; 
 }

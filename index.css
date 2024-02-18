@@ -1,15 +1,23 @@
-.header {
-    color: red;
-    text-align: center;
-    font-size: 32px; 
-    margin-top: 50px; 
+body {
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
-/* Styling for the body content */
-.content {
-    color: rgb(1, 16, 1);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 18px; 
-    line-height: 1.5; 
-    margin: 20px; 
+    flex: 1; 
+}
+#body{
+    padding-top: 50px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+footer.footer {
+    margin-top: auto; 
 }

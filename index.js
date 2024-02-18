@@ -1,20 +1,17 @@
 function fetchDataAndUpdate() {
-  const dataURL = './store/controller.json';
-  fetch(dataURL)
-      .then(response => response.json())
-      .then(data => {
-          const headerContent = data.header;
-          const contentData = data.body;
-
-          // Select the elements to update
-          const headerElement = document.querySelector('.header');
-          const contentElement = document.querySelector('.content');
-
-          // Set inner HTML of elements to data from JSON
-          headerElement.innerHTML = headerContent;
-          contentElement.innerHTML = contentData;
-      })
-      .catch(error => console.error('Error fetching data:', error));
+    const pageCode = './store/pageContent.json'
+    fetch(pageCode)
+        .then(response => response.json())
+        .then(data => {
+            const bodyContent = data.page;
+            const bodyElement = document.getElementById('body');
+            bodyElement.innerHTML = bodyContent;
+        })
+        .catch(error => console.error('Error fetching data:', error));
 }
 
 fetchDataAndUpdate();
+
+function showAlert(){
+    alert('This is a fully automated app, no programmer is working behind this application.');
+}
